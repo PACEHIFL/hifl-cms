@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_variations",
+  "info": {
+    "singularName": "product-variation",
+    "pluralName": "product-variations",
+    "displayName": "Product-Variation"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TeamID": {
+      "type": "string"
+    },
+    "Sizes": {
+      "type": "json"
+    },
+    "Customization": {
+      "type": "boolean",
+      "default": false
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product",
+      "mappedBy": "product_variation"
+    }
+  }
+}

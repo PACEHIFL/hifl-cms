@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "feature_teams",
+  "info": {
+    "singularName": "feature-team",
+    "pluralName": "feature-teams",
+    "displayName": "FeatureTeam"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "InstitutionName": {
+      "type": "string"
+    }
+  }
+}

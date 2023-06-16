@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adverts",
+  "info": {
+    "singularName": "advert",
+    "pluralName": "adverts",
+    "displayName": "Advert"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Advertiser": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "AdvertImage": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Active": {
+      "type": "boolean",
+      "default": true
+    },
+    "Position": {
+      "type": "enumeration",
+      "enum": [
+        "Sidebar",
+        "Main Section"
+      ]
+    }
+  }
+}

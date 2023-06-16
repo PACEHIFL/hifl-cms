@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_section_a_content_sections",
+  "info": {
+    "displayName": "Content-Section"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "richtext"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

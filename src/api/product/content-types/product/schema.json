@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "unique": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Details": {
+      "type": "richtext"
+    },
+    "CoverImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ProductGallery": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "ProductCode": {
+      "type": "string"
+    },
+    "InStock": {
+      "type": "boolean",
+      "default": true
+    },
+    "PreOrder": {
+      "type": "boolean",
+      "default": false
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "DiscountPrice": {
+      "type": "decimal"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Kit",
+        "Equipment",
+        "Wearable"
+      ]
+    },
+    "product_variation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product-variation.product-variation",
+      "inversedBy": "product"
+    },
+    "Customizable": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

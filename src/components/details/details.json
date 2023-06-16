@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_details_details",
+  "info": {
+    "displayName": "Details"
+  },
+  "options": {},
+  "attributes": {
+    "Institution": {
+      "type": "string"
+    },
+    "Appearances": {
+      "type": "integer"
+    },
+    "Goals": {
+      "type": "integer"
+    },
+    "Assists": {
+      "type": "integer"
+    },
+    "YellowCard": {
+      "type": "integer"
+    },
+    "RedCard": {
+      "type": "integer"
+    },
+    "LeagueWon": {
+      "type": "integer"
+    },
+    "TeamLogo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "TeamName": {
+      "type": "string"
+    }
+  }
+}
