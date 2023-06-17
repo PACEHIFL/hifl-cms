@@ -1,21 +1,23 @@
 {
   "kind": "singleType",
-  "collectionName": "feature_teams",
+  "collectionName": "feature_players",
   "info": {
-    "singularName": "feature-team",
-    "pluralName": "feature-teams",
-    "displayName": "Feature-Team",
-    "description": ""
+    "singularName": "feature-player",
+    "pluralName": "feature-players",
+    "displayName": "Feature-Player"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "InstitutionName": {
+    "Fullname": {
       "type": "string"
     },
-    "Content": {
+    "Position": {
+      "type": "string"
+    },
+    "Team": {
       "type": "component",
       "repeatable": false,
       "component": "details.details"

@@ -1,18 +1,17 @@
 {
   "kind": "singleType",
-  "collectionName": "feature_teams",
+  "collectionName": "feature_coaches",
   "info": {
-    "singularName": "feature-team",
-    "pluralName": "feature-teams",
-    "displayName": "Feature-Team",
-    "description": ""
+    "singularName": "feature-coach",
+    "pluralName": "feature-coaches",
+    "displayName": "Feature-Coach"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "InstitutionName": {
+    "Fullname": {
       "type": "string"
     },
     "Content": {
